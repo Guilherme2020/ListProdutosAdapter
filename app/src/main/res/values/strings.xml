@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">ListaProdutosCustom</string>
+    <string name="novo_produto">Novo Produto</string>
+    <string-array name="produtos">
+        <item>Leite</item>
+        <item>Arroz</item>
+        <item>Peixe</item>
+        <item>Banana</item>
+    </string-array>
+    <string name="seta" > > </string>
+</resources>

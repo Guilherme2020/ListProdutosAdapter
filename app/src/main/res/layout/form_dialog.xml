@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="watch_parent"
+        android:layout_height="wrap_content">
+
+        <EdiText
+            android:id="@+id/ed_produto_nome"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nome do Produto" />
+
+    </android.support.design.widget.TextInputLayout>
+
+
+
+    <android.support.design.widget.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/ed_produto_preco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Preco (R$)"
+            android:inputType="numberDecimal"/>
+
+
+    </android.support.design.widget.TextInputLayout>
+
+</LinearLayout>
