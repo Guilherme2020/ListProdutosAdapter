@@ -10,13 +10,16 @@ import android.view.ContextMenu;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.support.design.widget.Snackbar;
+
+
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
-import android.R.*;
+
 import java.util.ArrayList;
 import java.util.List;
 import com.grodrigues.listaprodutoscustom.model.Produto;
@@ -146,16 +149,18 @@ public class MainActivity extends AppCompatActivity {
 
     }
     public void loadProdutos() {
+        List<Produto> produtos = Produto.listAll(Produto.class);
+        ArrayAdapter<Produto> adapter =
+                new ArrayAdapter<Produto>(this,android.R.layout.simple_list_item_1,produtos);
+
+        lvProdutos.setAdapter(adapter);
+
+//
 //        List<Produto> produtos = Produto.listAll(Produto.class);
-//        ArrayAdapter<Produto> adapter =
-//                new ArrayAdapter<Produto>(this,android.R.layout.simple_list_item_1,produtos);
+//        ProdutoAdapter adapter = new ProdutoAdapter(this,produtos);
 //
 //        lvProdutos.setAdapter(adapter);
 //
 //
-        List<Produto> produtos = Produto.listAll(Produto.class);
-        ProdutoAdapter adapter = new ProdutoAdapter(this,produtos);
-
-        lvProdutos.setAdapter(adapter);
     }
 }
