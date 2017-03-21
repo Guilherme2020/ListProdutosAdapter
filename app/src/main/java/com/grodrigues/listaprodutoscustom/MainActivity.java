@@ -149,18 +149,18 @@ public class MainActivity extends AppCompatActivity {
 
     }
     public void loadProdutos() {
+//        List<Produto> produtos = Produto.listAll(Produto.class);
+//        ArrayAdapter<Produto> adapter =
+//                new ArrayAdapter<Produto>(this,android.R.layout.simple_list_item_1,produtos);
+//
+//        lvProdutos.setAdapter(adapter);
+
+
         List<Produto> produtos = Produto.listAll(Produto.class);
-        ArrayAdapter<Produto> adapter =
-                new ArrayAdapter<Produto>(this,android.R.layout.simple_list_item_1,produtos);
+        ProdutoAdapter adapter = new ProdutoAdapter(this,produtos);
 
         lvProdutos.setAdapter(adapter);
 
-//
-//        List<Produto> produtos = Produto.listAll(Produto.class);
-//        ProdutoAdapter adapter = new ProdutoAdapter(this,produtos);
-//
-//        lvProdutos.setAdapter(adapter);
-//
 
     }
 }
