@@ -157,7 +157,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         List<Produto> produtos = Produto.listAll(Produto.class);
-        ProdutoAdapter adapter = new ProdutoAdapter(this,produtos);
+        ProdutoAdapter adapter = new ProdutoAdapter(this,R.layout.item_name ,produtos);
 
         lvProdutos.setAdapter(adapter);
 

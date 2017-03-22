@@ -5,7 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.grodrigues.listaprodutoscustom.MainActivity">
+    tools:context="com.grodrigues.listaprodutoscustom.MainActivity"
+    android:background="@color/md_blue_grey_50">
 
     <TextView
         android:id="@+id/tv_hello"
@@ -27,7 +28,7 @@
     <ListView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/lv_produtos">
+        android:id="@+id/lv_produtos"
+        android:padding="16dp"/>
 
-    </ListView>
 </LinearLayout>
